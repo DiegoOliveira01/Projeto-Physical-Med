@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="/Styles/produtos.css">
+    <link rel="shortcut icon" href="Imagens/Physical_Med_FV.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="/Images/Physical_Med_SF.png" alt="Logo" id="logo">
+        <nav id="nav">
+            <ul id="lista-header">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="produto-detalhes">
+            <div class="produto-imagens">
+                <div class="carrossel-imagens">
+                    <div><img src="/Images/Cinta_01.jpg" alt="Produto 1"></div>
+                    <div><img src="/Images/Cinta_02.png" alt="Produto 1 - Vista lateral"></div>
+                    <div><img src="/Images/Cinta_03.png" alt="Produto 1 - Detalhe"></div>
+                </div>
+            </div>
+            <div class="produto-info">
+                <h2>Massageador Hand Black Physical</h2>
+                <p class="preco">R$ 620,00 ou 10X de R$62,00</p>
+                <p class="descricao">O Massageador Hand Black Physical proporciona uma massagem relaxante e eficaz, ideal para alívio de tensões e estresse. Compacto e fácil de usar, é perfeito para uso doméstico ou em viagens.</p>
+                <a href="https://marketplaceexemplo.com/produto1" class="marketplace-link" target="_blank">Compre agora no Marketplace</a>
+            </div>
+        </section>
+
+        <section id="produtos-similares">
+            <h2>Produtos Similares</h2>
+            <div class="carrossel-similares">
+                <a href="pagina-produto2.html">
+                    <img src="/Images/Almofada_01.jpg" alt="Produto 2">
+                    <p>Almofada Vibratória Térmica - R$ 1.199,00</p>
+                </a>
+                <a href="pagina-produto3.html">
+                    <img src="/Images/Colete_Prata_01.jpg" alt="Produto 3">
+                    <p>Cinto Redutor Massage Belt - R$ 1.699,00</p>
+                </a>
+                <a href="pagina-produto4.html">
+                    <img src="/Images/Massageador_01.jpg" alt="Produto 4">
+                    <p>Corporal de Massagem - R$ 999,00</p>
+                </a>
+                <a href="pagina-produto5.html">
+                    <img src="/Images/Plataforma_01.jpg" alt="Produto 5">
+                    <p>Colete de Massagem - R$ 1.299,00</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <strong>Diego Oliveira Da Fonte</strong></p>
+        <p>Confira meu trabalho no <a href="https://github.com/DiegoOliveira01?tab=repositories" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carrossel-imagens').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                adaptiveHeight: true
+            });
+            $('.carrossel-similares').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
