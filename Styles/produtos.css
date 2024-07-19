@@ -57,6 +57,13 @@ main {
     padding: 20px;
 }
 
+#texto-imagem {
+    text-align: left;
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px; /* Espaço entre o texto e o carrossel */
+}
+
 #produto-detalhes {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +78,8 @@ main {
     padding: 20px;
     display: flex;
     justify-content: center;
+    min-height: 270px;
+    min-width: 270px;
     align-items: center; /* Adiciona alinhamento vertical */
     overflow: hidden; /* Evita rolagem */
 }
@@ -101,7 +110,7 @@ main {
     color: #333;
 }
 
-.produto-info .preco {
+.produto-info #preco {
     font-size: 1.5em;
     color: #23d6da;
     margin-bottom: 20px;
@@ -162,6 +171,7 @@ main {
 
 .carrossel-similares img {
     width: 100%;
+    margin: auto;
     height: auto;
     max-width: 150px;
     border-radius: 8px;

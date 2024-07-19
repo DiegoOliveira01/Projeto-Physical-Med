@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="../Styles/produtos.css">
+    <script src="../Scripts/dados_produtos.js" defer></script>
     <link rel="shortcut icon" href="../Imagens/Physical_Med_FV.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="/Images/Physical_Med_SF.png" alt="Logo" id="logo">
+        <img src="../Images/Physical_Med_SF.png" alt="Logo" id="logo">
         <nav id="nav">
             <ul id="lista-header">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="../index.html#produtos">Produtos</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
+        <p id="texto-imagem" >Arraste para passar as imagens</p>
         <section id="produto-detalhes">
             <div class="produto-imagens">
                 <div class="carrossel-imagens">
@@ -31,8 +33,8 @@
                 </div>
             </div>
             <div class="produto-info">
-                <h2>Massageador Hand Black Physical</h2>
-                <p class="preco">R$ 620,00 ou 10X de R$62,00</p>
+                <h2 id="nome-produto"></h2>
+                <p id="preco"></p>
                 <p class="descricao">O Massageador Hand Black Physical proporciona uma massagem relaxante e eficaz, ideal para alívio de tensões e estresse. Compacto e fácil de usar, é perfeito para uso doméstico ou em viagens.</p>
                 <a href="https://marketplaceexemplo.com/produto1" class="marketplace-link" target="_blank">Compre agora no Marketplace</a>
             </div>
@@ -69,6 +71,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+        // Aguardar o carregamento do DOM
+        document.addEventListener("DOMContentLoaded", function() {
+            // Atualizar o preço com base na variável 'produto1' definida no 'precos.js'
+            document.getElementById("preco").textContent = obterPreco("Cinta");
+            document.getElementById("nome-produto").textContent = obterNome("Cinta");
+        });
         $(document).ready(function(){
             $('.carrossel-imagens').slick({
                 infinite: true,
