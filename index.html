@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="shortcut icon" href="Imagens/Physical_Med_FV.png" type="image/x-icon">
+    <script src="/Scripts/dados_produtos.js" defer></script>
     <link rel="stylesheet" href="Styles/style.css">
     <title>Home</title>
 </head>
@@ -26,8 +27,8 @@
     <section id="produtos">
         <a href="/Pages/cinta_amarela.html" class="produto">
             <img src="Images/Massageador_01.jpg" alt="Produto 1">
-            <h3>Massageador Hand Black Physical</h3>
-            <p>R$ 620,00 ou 10X de R$62,00</p>
+            <h3 id="cinta_nome"></h3>
+            <p id="cinta_preco"></p>
         </a>
         <a href="pagina-produto2.html" class="produto">
             <img src="Images/Almofada_01.jpg" alt="Produto 2">
@@ -84,6 +85,12 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Atualizar o preço com base na variável 'produto1' definida no 'precos.js'
+            document.getElementById("cinta_preco").textContent = obterPreco("Massageador");
+            document.getElementById("cinta_nome").textContent = obterNome("Massageador");
+        });
+        
         $(document).ready(function(){
             $('.carrossel').slick({
                 infinite: true,
