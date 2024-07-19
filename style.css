@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #2a6a8f 0%, #1a9eaa 100%);
+    border-bottom-left-radius: 12px; 
+    border-bottom-right-radius: 12px; 
+}
+
+#nav {
+    flex: 1;
+    text-align: right; 
+}
+
+#Lista_Header {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+#Lista_Header li {
+    margin-left: 20px; 
+}
+
+#Lista_Header a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+#Lista_Header a:hover {
+    color: #53eff5; 
+    font-size: larger;
+}
+
+#Logo {
+    width: 120px;
+    height: 120px;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo dos blocos */
+}
+
+.produto {
+    flex: 1 1 calc(25% - 20px); /* Ajusta o tamanho dos blocos */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Borda arredondada */
+    padding: 15px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do texto do pai */
+    transition: box-shadow 0.3s ease; /* Adiciona um efeito suave ao passar o mouse */
+}
+
+.produto:hover {
+    box-shadow: 0 4px 10px rgba(44, 223, 255, 0.6); /* Adiciona uma sombra ao passar o mouse */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Borda arredondada da imagem */
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.produto p {
+    font-size: 1.1em;
+    color: #23d6da; /* Cor do preço */
+    font-weight: bold;
+}
+
+#carrossel {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo do carrossel */
+    border: 2px solid #1a9eaa;
+    border-radius: 12px;
+}
+
+.carrossel a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Borda arredondada das imagens */
+    border: 1px solid #ebebeb;
+}
+
+.carrossel p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #23d6da; /* Cor do preço */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd; 
+}
+
+footer p {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: #23d6da;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}

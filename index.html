@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<body>
+    <header>
+        <img src="Imagens/Physical_Med_SF.png" alt="Logo" id="Logo">
+        <div id="nav">
+            <ul id="Lista_Header">
+                <li><a href="Produtos">.Produtos</a></li>
+                <li><a href="Contato">.Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="produtos">
+        <a href="pagina-produto1.html" class="produto">
+            <img src="Imagens/Massageador_01.jpg" alt="Produto 1">
+            <h3>Massageador Hand Black Physical</h3>
+            <p>R$ 620,00 ou 10X de R$62,00</p>
+        </a>
+        <a href="pagina-produto2.html" class="produto">
+            <img src="Imagens/Almofada_01.jpg" alt="Produto 2">
+            <h3>Almofada Vibratória Térmica</h3>
+            <p>R$ 1.199,00 ou 10X de R$ 119,99</p>
+        </a>
+        <a href="pagina-produto3.html" class="produto">
+            <img src="Imagens/Cinta_01.jpg" alt="Produto 3">
+            <h3>Cinto Redutor Massage Belt</h3>
+            <p>R$ 1.699,00 ou 12X de R$141,80</p>
+        </a>
+        <a href="pagina-produto4.html" class="produto">
+            <img src="Imagens/Colete_01.png" alt="Produto 4">
+            <h3>Corporal de Massagem Physical</h3>
+            <p>R$ 1.199,00 ou 10X de R$199,99</p>
+        </a>
+    </section>
+
+    <section id="carrossel">
+        <div class="carrossel">
+            <a href="pagina-produto1.html">
+                <img src="Imagens/Almofada_01.jpg" alt="Produto 1">
+                <p>R$ 99,99</p>
+            </a>
+            <a href="pagina-produto2.html">
+                <img src="Imagens/Plataforma_01.jpg" alt="Produto 2">
+                <p>R$ 129,99</p>
+            </a>
+            <a href="pagina-produto3.html">
+                <img src="Imagens/Massageador_01.jpg" alt="Produto 3">
+                <p>R$ 89,99</p>
+            </a>
+            <a href="pagina-produto4.html">
+                <img src="Imagens/Cinta_01.jpg" alt="Produto 4">
+                <p>R$ 149,99</p>
+            </a>
+            <a href="pagina-produto5.html">
+                <img src="Imagens/Colete_01.png" alt="Produto 5">
+                <p>R$ 109,99</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <strong>Diego Oliveira Da Fonte</strong></p>
+        <p>Confira meu trabalho no <a href="https://github.com/DiegoOliveira01?tab=repositories" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carrossel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+        </script>
+</body>
+</html>
