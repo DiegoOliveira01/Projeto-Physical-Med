@@ -148,6 +148,13 @@ header {
     border-radius: 12px;
 }
 
+.carrossel h3 {
+    margin: 10px 0 5px; /* Ajusta a margem */
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
 .carrossel a {
     display: block;
     text-align: center;
