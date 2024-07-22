@@ -182,6 +182,41 @@ header {
     color: #333;
 }
 
+.produto-todos {
+    flex: 1 1 calc(25% - 20px); /* Ajusta o tamanho dos blocos */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Borda arredondada */
+    padding: 15px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do texto do pai */
+    transition: box-shadow 0.3s ease; /* Adiciona um efeito suave ao passar o mouse */
+}
+
+.produto-todos:hover {
+    box-shadow: 0 4px 10px rgba(44, 223, 255, 0.6); /* Adiciona uma sombra ao passar o mouse */
+}
+
+.produto-todos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Borda arredondada da imagem */
+}
+
+.produto-todos h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.produto-todos p {
+    font-size: 1.1em;
+    color: #23d6da; /* Cor do preço */
+    font-weight: bold;
+}
+
 footer {
     background-color: #f0f0f0; 
     padding: 20px;
