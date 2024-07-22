@@ -11,9 +11,7 @@ header {
     background: linear-gradient(135deg, #2a6a8f 0%, #1a9eaa 100%);
     border-bottom-left-radius: 12px; 
     border-bottom-right-radius: 12px; 
-}
-header:hover{
-    background: linear-gradient(135deg, #2a6a8f 0%, #087d88 100%);
+    margin-bottom: 20px;
 }
 
 #nav {
@@ -57,6 +55,13 @@ header:hover{
     background-color: #f9f9f9; /* Cor de fundo dos blocos */
 }
 
+#titulo-produtos{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0; /* Adiciona margem acima e abaixo do título */
+    color: #333;
+}
+
 .produto {
     flex: 1 1 calc(25% - 20px); /* Ajusta o tamanho dos blocos */
     box-sizing: border-box;
@@ -96,7 +101,7 @@ header:hover{
 
 #sobre {
     padding: 40px 20px;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #cacaca 100%);
     border-radius: 12px;
     margin: 20px auto;
     margin-bottom: 50px;
@@ -125,9 +130,18 @@ header:hover{
     line-height: 1.6;
 }
 
+#titulo-produtos-carrosel{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
+
 #carrossel {
     max-width: 100%;
     margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 20px;
     background-color: #f9f9f9; /* Cor de fundo do carrossel */
     border: 2px solid #1a9eaa;
@@ -139,6 +153,8 @@ header:hover{
     text-align: center;
     text-decoration: none;
     color: inherit;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 .carrossel img {
@@ -148,11 +164,22 @@ header:hover{
     border: 1px solid #ebebeb;
 }
 
+.carrossel img:hover{
+    box-shadow: 0 4px 8px #1a9eaa;
+}
+
 .carrossel p {
     margin: 10px 0;
     font-size: 1.1em;
     color: #23d6da; /* Cor do preço */
     font-weight: bold;
+}
+
+#titulo-produtos-todos{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
 }
 
 footer {
