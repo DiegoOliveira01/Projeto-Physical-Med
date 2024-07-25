@@ -1,0 +1,15 @@
+/* responsive.css */
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .produto, .produto-todos {
+        flex: 1 1 100%; /* Produtos ocupam 100% da largura do contêiner */
+    }
+}
+
+/* Ajustes para telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .produto, .produto-todos {
+        flex: 1 1 calc(50% - 20px); /* Produtos ocupam 50% da largura do contêiner */
+    }
+}

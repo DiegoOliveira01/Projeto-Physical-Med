@@ -110,7 +110,7 @@ main {
     color: #333;
 }
 
-.produto-info #preco {
+.produto-info .produto-preco {
     font-size: 1.5em;
     color: #23d6da;
     margin-bottom: 20px;
@@ -150,6 +150,10 @@ main {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+}
+
+#produtos-similares h3 {
+    color: #333;
 }
 
 .carrossel-imagens {
